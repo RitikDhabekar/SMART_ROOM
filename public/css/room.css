@@ -1,0 +1,130 @@
+
+*{
+    /* height: 100vh; */
+    margin: 0px;
+}
+#video-grid{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+video{
+    margin: 10px;
+    height: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.main_left{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_right{
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    background-color: #242324;
+    border-left: 1px solid #303042;
+
+}
+
+.main_header{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.chat_window{
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.messages_container{
+    padding: 22px 12px;
+    display: flex;
+    padding-bottom: 90px;
+}
+
+.messages_container input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+
+}
+
+.main_videos{
+    flex-grow: 1;
+    background-color:#262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_controls{
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    background-color:#1d1d1d ;
+    color: whitesmoke;
+    padding: 6px;
+    justify-content: space-between;
+}
+
+.main_controls_block{
+    display: flex;
+}
+
+.main_controls_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-width: 50px;
+    cursor: pointer;
+}
+
+.main_controls_btn:hover{
+    background-color:#262626;
+    font-weight: bold;
+}
+
+#leave{
+
+    color: rgb(255, 100, 100) ;
+}
+#leave:hover{
+    color: rgb(170, 0, 0) ;
+}
+a:link {
+    text-decoration: none;
+}
+
+
+
+.messages{
+    color: white;
+    list-style: none;
+}
+
+.mute, .stop-video{
+    color: red;
+}
+
+.unmute, .play{
+    color: whitesmoke;
+}
+
